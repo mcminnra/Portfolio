@@ -1,0 +1,153 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.bigbanner{
+	background-image: url("../img/sharkdrawing.jpg");
+	width: 100%;
+	height: 800px;
+	background-position: 25% 50%;
+	background-repeat: no-repeat;
+}
+.bigbanner hgroup{
+	padding-top: 5%;
+	text-align: center;
+}
+
+/*Skills*/
+.skills {
+	background-color: #111;
+	margin-bottom: -20px;
+}
+.skills h2 {
+	text-align: center;
+}
+.skills h3{
+	text-align: center;
+}
+.skills .row {
+	text-align: center;
+	color: white;
+	list-style-type: none;
+}
+.skills .row h3, h5 {
+	color: white;
+}
+.skills .row ul{
+	list-style-type: none;
+}
+.skills .row li{
+	text-align: center;
+}
+/*End Skills*/
+
+/*Projects*/
+.projects {
+	background-color: #111;
+	margin-bottom: -20px;
+}
+.projects h2 {
+	text-align: center;
+}
+.projects h3{
+	text-align: center;
+}
+.projects .project-identifier {
+	color: white;
+	text-align: left;
+}
+.projects .project-title {
+	color: lightgray;
+	font-size: 50px;
+}
+.projects .project {
+	color: grey;
+}
+.projects .project img {
+	min-width: 100%;
+	height: auto;
+}
+.projects .project hr{
+	width: 50%;
+}
+/*End Projects*/
+
+/*About Me*/
+.aboutme {
+	background-color: white;
+}
+.aboutme h2 {
+	text-align: center;
+}
+.aboutme h3{
+	text-align: center;
+}
+.aboutme p{
+	width: 90%;
+	text-align:center;
+}
+.aboutme img {
+	min-width: 100%;
+	height: auto;
+}
+/*End About Me*/
+
+.contactme {
+	background-color: #111;
+	margin-bottom: -25px;
+}
+.contactme h2 {
+	text-align: center;
+}
+.contactme h3{
+	text-align: center;
+}
+.contactme ul li table{
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+.contactme .contacttitle {
+	text-align: center;
+	size: 16px;
+	color: white;
+}
+.contactme .contactinfo {
+	text-align: center;
+	color: white;
+}
+/***Globals***/
+/*Padding*/
+.pad-top-10 {
+	padding-top: 10%;
+}
+.pad-top-7{
+	padding-top: 7%;
+}
+.pad-top-6{
+	padding-top: 6%;
+}
+.pad-left-3{
+	padding-left: 3%;
+}
+.no-padding {
+	padding: 0px;
+}
+
+/*margins*/
+.no-margins {
+	margin: 0px;
+}
+
+/*colors*/
+.white {
+	color: white;
+}
+.darkgray {
+	color: darkgray;
+}
