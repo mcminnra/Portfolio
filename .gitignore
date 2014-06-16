@@ -1,0 +1,13 @@
+logs/*
+!.gitkeep
+node_modules/
+test/
+tmp
+.DS_Store
+.idea
+package.json
+bower.json
+.jshintrc
+.bowerrc
+app/bower_components
+app/img

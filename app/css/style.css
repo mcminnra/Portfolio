@@ -1,0 +1,290 @@
+
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+	font-family: FontAwesome, arial;
+}
+
+@media all and (min-width: 600px) {
+	.bigbanner{
+		background-image: url("../img/sharkdrawing.jpg");
+		width: 100%;
+		height: 1000px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+@media all and (max-width: 599px) {
+	.bigbanner{
+		margin-bottom: 15%;
+	}
+}
+@media all and (max-width: 1260px) {
+	.skills{
+		text-align: center;
+		width: 100%;
+	}
+	.skills .large-block-grid-3 #skill{
+		text-align: center;
+		color: white;
+		width: 70%;
+		margin-right:15%;
+		margin-left:15%;
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+}
+
+/*Big Banner*/
+.bigbanner hgroup{
+	padding-top: 5%;
+	text-align: center;
+}
+.bigbanner hgroup a{
+	margin-top: 5%;
+}
+
+/*Skills*/
+.skills {
+	background-color: #111;
+	margin-bottom: -20px;
+	padding-left:5%;
+	padding-right: 5%;
+}
+.skills h2 {
+	text-align: center;
+}
+.skills h3{
+	text-align: center;
+}
+.skills .otherSkill h3{
+	text-align: left !important;
+	color: white !important;
+}
+.skills .otherSkill h5{
+	color: white !important;
+	color: darkgray !important;
+}
+.skills ul {
+	text-align: center !important;
+}
+.skills .skill h3 {
+	color: white !important;
+}
+.skills .skill h5{
+	color: white !important;
+}
+.skills .skill p{
+	color: darkgray !important;
+}
+/*End Skills*/
+
+/*Projects*/
+.projects {
+	background-color: #111;
+	margin-bottom: -20px;
+	
+	padding-left:5%;
+	padding-right: 5%;
+}
+.projects h2 {
+	text-align: center;
+}
+.projects h3{
+	text-align: center;
+}
+.projects .project-identifier {
+	color: white;
+	text-align: left;
+}
+.projects .project-title {
+	color: lightgray;
+	font-size: 50px;
+}
+.projects .project {
+	color: grey;
+}
+.projects .project img {
+	min-width: 100%;
+	height: auto;
+}
+.projects .project hr{
+	width: 50%;
+}
+/*End Projects*/
+
+/*About Me*/
+.aboutme {
+	background-color: white;
+	padding-left:5%;
+	padding-right: 5%;
+}
+.aboutme h2 {
+	text-align: center;
+}
+.aboutme h3{
+	text-align: center;
+}
+.aboutme p{
+	width: 90%;
+	text-align:center;
+}
+.aboutme img {
+	min-width: 100%;
+	height: auto;
+}
+/*End About Me*/
+/*Contact Me*/
+.contactme {
+	background-color: #111;
+	margin-bottom: -25px;
+	padding-left:5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+.contactme h2 {
+	text-align: center;
+}
+.contactme h3{
+	text-align: center;
+}
+.contactme ul li table{
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+.contactme .contacttitle {
+	text-align: center;
+	size: 16px;
+	color: white;
+}
+.contactme .contactinfo {
+	text-align: center;
+	color: white;
+}
+
+/*Footer*/
+.footer dl{
+	float:left;
+}
+.footer p{
+	float:right;
+	font-size: 4;
+}
+/***Globals***/
+/*Padding*/
+.pad-top-10 {
+	padding-top: 10%;
+}
+.pad-top-7{
+	padding-top: 7%;
+}
+.pad-top-6{
+	padding-top: 6%;
+}
+.pad-left-3{
+	padding-left: 3%;
+}
+.no-padding {
+	padding: 0px;
+}
+
+/*margins*/
+.no-margins {
+	margin: 0px;
+}
+
+/*colors*/
+.white {
+	color: white;
+}
+.darkgray {
+	color: darkgray;
+}
+
+/* Wobble Horizontal */
+@-webkit-keyframes wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.wobble-horizontal {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble-horizontal:hover, .wobble-horizontal:focus, .wobble-horizontal:active {
+  -webkit-animation-name: wobble-horizontal;
+  animation-name: wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
