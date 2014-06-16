@@ -11,3 +11,4 @@ bower.json
 .bowerrc
 app/bower_components
 app/img
+.travis.yaml
