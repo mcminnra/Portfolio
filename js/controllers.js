@@ -198,7 +198,7 @@ var projects = [
 				'name' : 'JQuery'
 			},
 			{
-				'name' : 'Hover.css'
+				'name' : 'NodeJS'
 			},
 			{
 				'name' : 'AngularJS'
