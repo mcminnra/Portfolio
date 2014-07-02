@@ -4,9 +4,9 @@ body {
 
 .jumbotron {
 	height: 50em;
-	background-image: url('../img/jumbotronshark.jpg');
+	background-image: url('../img/jumbotronsharklightblue.jpg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: 50%;
-	background-color: white;
+	background-color: rgb(0,255,255);
 }
