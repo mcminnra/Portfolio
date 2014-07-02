@@ -211,7 +211,7 @@ var projects = [
 	{
 		'classtags' : 'PROJECT JAVA',
 		"name" : "BitCoinInvestor",
-		"imgsrc" : "http://placeimg.com/500/200/any",
+		"imgsrc" : "img/bitcoininvestor.png",
 		'type' : 'Personal',
 		'languages' : [
 			{
@@ -230,7 +230,7 @@ var projects = [
 	{
 		'classtags' : 'PROJECT CSHARP',
 		"name" : "VideoGameDatabaseManager",
-		"imgsrc" : "http://placeimg.com/500/200/any",
+		"imgsrc" : "img/videogamedatabasemanager.png",
 		'type' : 'Personal',
 		'languages' : [
 			{
