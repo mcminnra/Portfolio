@@ -1,0 +1,34 @@
+{
+  "name": "Portfolio",
+  "version": "0.1.0",
+  "description": "My website where I display my projects and other assorted things",
+  "main": "index.html",
+  "dependencies": {
+    "karma": "^0.12.16",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmcminn/Portfolio.git"
+  },
+  "keywords": [
+    "ryder",
+    "mcminn",
+    "portfolio",
+    "projects",
+    "software",
+    "engineer",
+    "developer"
+  ],
+  "author": "Ryder McMinn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmcminn/Portfolio/issues"
+  },
+  "homepage": "http://www.rydermcminn.com"
+}
