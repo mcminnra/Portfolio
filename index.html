@@ -13,6 +13,7 @@
 	    <!--Stylesheets-->
 	    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	    <link rel="stylesheet" href="css/style.css">
+	    <link href="css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -35,8 +36,10 @@
 				        	<li><a href="#aboutme">About Me</a></li>
 				        	<li><a href="#contactme">Contact Me</a></li>
 			       		</ul>
+			       		<p class="navbar-right"><a class="navbar-link" href="http://www.github.com/rmcminn"><button class="btn btn-github"><i class="fa fa-github"></i> | GitHub</button></a></p>
+			       		<p class="navbar-right"> | </p>
+			       		<p class="navbar-right"><a class="navbar-link" href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506"><button class="btn btn-linkedin"><i class="fa fa-linkedin"></i> | LinkedIn</button></a></p>
 			       	</div>
-
 				</div>
 			</nav>
 		  <div class="container">
@@ -106,7 +109,7 @@
 				        <p><i ng-repeat="language in project.languages"> * {{language.name}}</i></p>
 				        <p><i ng-repeat="framework in project.frameworks"> * {{framework.name}}</i></p>
 				        <div class="well" ng-show="project.description">{{project.description}}</div>
-				        <p><a ng-show="{{project.sourcecodelink}}" href="{{project.sourcecodelink}}">{{project.sourcecode}}</a></p>
+				        <p><a ng-show="{{project.sourcecodelink}}" href="{{project.sourcecodelink}}"> {{project.sourcecode}}</a></p>
 				      </div>
     				</div>
 				</div>
@@ -116,7 +119,7 @@
 				        <h3>Other Projects</h3>
 				        <hr />
 				        <p>You can view all my other projects over at my GitHub Page</p>
-				        <a href="https://www.github.com/rmcminn">GitHub/rmcminn</a>
+				        <i class="fa fa-github"></i><a href="https://www.github.com/rmcminn"> GitHub/rmcminn</a>
 				      </div>
     				</div>
 				</div>
@@ -166,10 +169,10 @@
 				<div class="panel panel-default">
 				  <div class="panel-heading">Connect on Social Media</div>
 				  <div class="panel-body">
-					<h4>Github</h4>
+					<h4><i class="fa fa-github"></i> Github</h4>
 					<a href="http://www.github.com/rmcminn">Github.com/rmcminn</a>
-					<h4>LinkedIn</h4>
-					<a href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506">LinkedIn!</a>
+					<h4><i class="fa fa-linkedin"></i> LinkedIn</h4>
+					<a href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506">LinkedIn</a>
 				  </div>
 				</div>
 			</div>
