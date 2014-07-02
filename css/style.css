@@ -1,0 +1,12 @@
+body {
+	overflow-x: hidden; 
+}
+
+.jumbotron {
+	height: 50em;
+	background-image: url('../img/jumbotronshark.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-color: white;
+}

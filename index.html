@@ -12,36 +12,28 @@
 
 	    <!--Stylesheets-->
 	    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	    <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
 		<!--Jumbotron-->
 		<div class="jumbotron">
+			<a name="home"></a>
 			<!--Nav-->
 			<nav class="navbar navbar-default" role="navigation">
 				 <div class="container-fluid">
 
 				    <!--Nav Header-->
 				    <div class="navbar-header">
-				    	<a class="navbar-brand" href="#">Ryder McMinn</a>
+				    	<a class="navbar-brand" href="#home"><span class="glyphicon glyphicon-registration-mark"></span></a>
 				    </div>
 				    <!--Nav Links-->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				    	<ul class="nav navbar-nav">
-				        	<li><a href="#">Skills</a></li>
-				        	<li class="dropdown">
-					          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-					          <ul class="dropdown-menu">
-					            <li><a href="#"><em>Professional</em> - IDEM Field Notes Tools</a></li>
-					            <li class="divider"></li>
-					            <li><a href="#"><em>Personal</em> - Indiana University GPA Calculator</a></li>
-					            <li><a href="#"><em>Personal</em> - Portfolio Website</a></li>
-					             <li class="divider"></li>
-					            <li><a href="#">Other Projects</a></li>
-					          </ul>
-					        </li>
-				        	<li><a href="#">About Me</a></li>
-				        	<li><a href="#">Contact Me</a></li>
+				        	<li><a href="#skills">Skills</a></li>
+				        	<li><a href="#projects">Projects</a></li>
+				        	<li><a href="#aboutme">About Me</a></li>
+				        	<li><a href="#contactme">Contact Me</a></li>
 			       		</ul>
 			       	</div>
 
@@ -50,19 +42,20 @@
 		  <div class="container">
 		    <h1>Ryder McMinn</h1>
 		    <h1><small>Student. Software Engineer. Shark Enthusiast.</small></h1>
-		    <p><a class="btn btn-primary btn-lg" role="button">Check Out My Projects!</a></p>
+		    <p><a class="btn btn-primary btn-lg" role="button" href="#projects">Check Out My Projects!</a></p>
 		  </div>
 		</div>
 
 		<!--Skills-->
 		<div class="skills" ng-controller="SkillController as skillCtrl">
-			<h2 class="text-center">Skills</h2>
+			<a name="skills"></a>
+			<h2 class="text-center"><span class="glyphicon glyphicon-tasks"></span> Skills</h2>
 			<h2 class="text-center"><small>Languages, Frameworks, and Tools</small></h2>
 			<hr />
 			<div class="row">
 				<div class="col-md-4" ng-repeat="skill in skillCtrl.skills | orderBy:'-knowledge'">
 					<div class="thumbnail">
-				      <img src="http://placeimg.com/500/200/any" alt="...">
+				      <img src="{{skill.imgsrc}}" alt="...">
 				      <div class="caption">
 				        <h3>{{skill.name}}</h3>
 				        <div class="progress progress-striped">
@@ -90,23 +83,42 @@
 
 		<!--Projects-->
 		<div class="projects" ng-controller="ProjectController as projectCtrl">
-			<h2 class="text-center">Projects</h2>
+			<a name="projects"></a>
+			<h2 class="text-center"><span class="glyphicon glyphicon-fire"></span> Projects</h2>
 			<h2 class="text-center"><small><em>Professional and Personal</em></small></h2>
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').show();">All</button>
+			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.JAVA').show();">Java</button>
+			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.HTML5CSS').show();">HTML/CSS</button>
+			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.JAVASCRIPT').show();">JavaScript</button>
+			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.CSHARP').show();">C#</button>
+			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.OBJECTIVEC').show();">Objective C</button>
+			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.PYTHON').show();">Python</button>
+			</div>
 			<hr />
 			<div class="row">
-				<div class="col-md-6" ng-repeat="project in projectCtrl.projects">
+				<div class="col-md-4 {{project.classtags}}" ng-repeat="project in projectCtrl.projects">
 					<div class="thumbnail">
-				      <img src="http://placeimg.com/500/200/any" alt="...">
+				      <img src="{{project.imgsrc}}" alt="...">
 				      <div class="caption">
 				        <h3>{{project.name}}</h3>
+				        <h4><i>{{project.type}}</i></h4>
+				        <p><i ng-repeat="language in project.languages"> * {{language.name}}</i></p>
+				        <p><i ng-repeat="framework in project.frameworks"> * {{framework.name}}</i></p>
+				        <div class="well" ng-show="project.description">{{project.description}}</div>
+				        <p><a ng-show="{{project.sourcecodelink}}" href="{{project.sourcecodelink}}">{{project.sourcecode}}</a></p>
 				      </div>
     				</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<div class="thumbnail">
-				      <img src="http://placeimg.com/500/200/any" alt="...">
 				      <div class="caption">
 				        <h3>Other Projects</h3>
+				        <p>Old Portfolio Versions</p>
+				        <a href="foundation_portfolio/index.html">Foundation 5</a>
+				        <hr />
+				        <p>You can view all my other projects over at my GitHub Page</p>
+				        <a href="https://www.github.com/rmcminn">GitHub/rmcminn</a>
 				      </div>
     				</div>
 				</div>
@@ -115,7 +127,8 @@
 
 		<!--About Me-->
 		<div class="aboutme">
-			<h2 class="text-center">About Me</h2>
+			<a name="aboutme"></a>
+			<h2 class="text-center"><span class="glyphicon glyphicon-user"></span> About Me</h2>
 			<h2 class="text-center"><small>Just A Brief Tid Bit</small></h2>
 			<hr />
 			<div class="row">
@@ -126,17 +139,19 @@
 					</blockquote>
 				</div>
 				<div class="col-md-6">
-					<img src="http://placeimg.com/900/500/any" alt="...">
+					<img src="img/aboutmeshark.jpg" alt="...">
 				</div>
 			</div>
 		</div>
 
 		<!--Contact Me-->
 		<div class="contactme">
-			<h2 class="text-center">Contact Me</h2>
+			<a name="contactme"></a>
+			<h2 class="text-center"><span class="glyphicon glyphicon-envelope"></span> Contact Me</h2>
 			<h2 class="text-center"><small>Shoot Me An Email!</small></h2>
 			<hr />
 			<div class="col-md-6">
+				<!--code for form
 				<form>
 					<div class="form-group">
 						<div class="input-group input-group-lg">
@@ -145,8 +160,20 @@
 						</div>
 					 	<input type="text" class="form-control" placeholder="Subject">
 					 	<textarea class="form-control" placeholder="Message"></textarea>
+					 	<button type="submit" class="btn btn-default">Submit</button>
+					 	<button type="Reset" class="btn btn-default">Reset</button>
 					</div>
 				</form>
+				-->
+				<div class="panel panel-default">
+				  <div class="panel-heading">Connect on Social Media</div>
+				  <div class="panel-body">
+					<h4>Github</h4>
+					<a href="http://www.github.com/rmcminn">Github.com/rmcminn</a>
+					<h4>LinkedIn</h4>
+					<a href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506">LinkedIn!</a>
+				  </div>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="panel panel-default">
@@ -157,8 +184,8 @@
 					<h4>Website Related</h4>
 					<a href="mailto:mcminnra@gmail.com">ryder@rydermcminn.com</a>
 				  </div>
-				</div>
-			</div>
+			    </div>
+			 </div>
 		</div>
 
 		<!--JavaScript Init-->
