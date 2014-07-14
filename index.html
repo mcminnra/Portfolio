@@ -27,6 +27,12 @@
 				    <!--Nav Header-->
 				    <div class="navbar-header">
 				    	<a class="navbar-brand" href="#home"><span class="glyphicon glyphicon-registration-mark"></span></a>
+				    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
 				    </div>
 				    <!--Nav Links-->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,17 +42,21 @@
 				        	<li><a href="#aboutme">About Me</a></li>
 				        	<li><a href="#contactme">Contact Me</a></li>
 			       		</ul>
-			       		<p class="navbar-right"><a class="navbar-link" href="http://www.github.com/rmcminn"><button class="btn btn-github"><i class="fa fa-github"></i> | GitHub</button></a></p>
-			       		<p class="navbar-right"> | </p>
-			       		<p class="navbar-right"><a class="navbar-link" href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506"><button class="btn btn-linkedin"><i class="fa fa-linkedin"></i> | LinkedIn</button></a></p>
+			       		<ul class="nav navbar-nav navbar-right navbar-socialicons">
+				       		<li><a class="navbar-link" href="http://www.github.com/rmcminn"><i class="fa fa-github"></i> | GitHub</a></li>
+				       		<li><a class="navbar-link" href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506"><i class="fa fa-linkedin"></i> | LinkedIn</a></li>
+			       		</ul>
 			       	</div>
 				</div>
 			</nav>
-		  <div class="container">
-		    <h1>Ryder McMinn</h1>
+		  <div class="container text-center">
+		    <h1 class="name text-shadow">Ryder McMinn</h1>
 		    <h1><small>Student. Software Engineer. Shark Enthusiast.</small></h1>
 		    <p><a class="btn btn-primary btn-lg" role="button" href="#projects">Check Out My Projects!</a></p>
 		  </div>
+		  <!-- until image can be editted
+		  <img class="text-center" src="img/jumbotronshark.jpg" style="width: 60%; height:50%; margin-left:20%; margin-right:20%;"/>
+		  -->
 		</div>
 
 		<!--Skills-->
@@ -61,7 +71,7 @@
 				      <img src="{{skill.imgsrc}}" alt="...">
 				      <div class="caption">
 				        <h3>{{skill.name}}</h3>
-				        <div class="progress progress-striped">
+				        <div class="progress progress-striped active">
 						  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{skill.knowledge}}" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.knowledge}}%">
 						    <span class="sr-only">{{skill.knowledge}}%</span>
 						  </div>
@@ -99,29 +109,27 @@
 			  <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.PYTHON').show();">Python</button>
 			</div>
 			<hr />
-			<div class="row">
-				<div class="col-md-4 {{project.classtags}}" ng-repeat="project in projectCtrl.projects">
-					<div class="thumbnail">
-				      <img src="{{project.imgsrc}}" alt="...">
-				      <div class="caption">
-				        <h3>{{project.name}}</h3>
-				        <h4><i>{{project.type}}</i></h4>
-				        <p><i ng-repeat="language in project.languages"> * {{language.name}}</i></p>
-				        <p><i ng-repeat="framework in project.frameworks"> * {{framework.name}}</i></p>
-				        <div class="well" ng-show="project.description">{{project.description}}</div>
-				        <p><a ng-show="{{project.sourcecodelink}}" href="{{project.sourcecodelink}}"> {{project.sourcecode}}</a></p>
-				      </div>
-    				</div>
+
+			<div class="row project {{project.classtags}}" ng-repeat="project in projectCtrl.projects">
+				<div class="col-md-6">
+					<h4><i>{{project.type}}</i></h4>
+					<h3>{{project.name}}</h3>
+			        <p><i ng-repeat="language in project.languages"> * {{language.name}}</i></p>
+			        <p><i ng-repeat="framework in project.frameworks"> * {{framework.name}}</i></p>
+			        <div class="well" ng-show="project.description">{{project.description}}</div>
+			        <p><a ng-show="{{project.sourcecodelink}}" href="{{project.sourcecodelink}}"> {{project.sourcecode}}</a></p>
 				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-				      <div class="caption">
-				        <h3>Other Projects</h3>
-				        <hr />
-				        <p>You can view all my other projects over at my GitHub Page</p>
-				        <i class="fa fa-github"></i><a href="https://www.github.com/rmcminn"> GitHub/rmcminn</a>
-				      </div>
-    				</div>
+				<div class="col-md-6">
+					<img src="{{project.imgsrc}}" alt="...">
+				</div>
+			</div>
+
+			<div class="row project">
+				<div class="col-md-12">
+			        <h3>Other Projects <i class="fa fa-cubes"></i></h3>
+			        <hr />
+			        <p>You can view all my other projects over at my GitHub Page</p>
+			        <i class="fa fa-github"></i><a href="https://www.github.com/rmcminn"> GitHub/rmcminn</a>
 				</div>
 			</div>
 		</div>
@@ -134,7 +142,7 @@
 			<hr />
 			<div class="row">
 				<div class="col-md-6">
-					<p>I'm a student at Indiana University pursuing my B.S. in Computer Science with a Minor in Business and a Minor in Security Informatics (Cybersecurity). I am extremely passionate about software, video game, and web development, and one day, I hope to pursue those passions professionally.  I enjoy playing guitar, sharks, and the occasional scotch; always two fingers on the rocks. I'm always ready and overtly willingly to learn, and I couldn't imagine a job where I didn't have to.</p>
+					<p class="aboutme-text">I'm a student at Indiana University pursuing my B.S. in Computer Science with a Minor in Business and Security Informatics (Cybersecurity). I am extremely passionate about software and web development, and one day, I hope to pursue those passions professionally.  I enjoy playing guitar, video games, sharks, and the occasional scotch; always two fingers on the rocks. I'm always ready and overtly willingly to learnc anything, and I couldn't imagine a job where I didn't have to.</p>
 					<blockquote class="blockquote-reverse"><p>A ship is safe in harbor, but that's not what ships are for.</p>
 						<footer><cite>William G.T. Shedd</cite></footer>
 					</blockquote>
@@ -189,11 +197,26 @@
 			 </div>
 		</div>
 
+		<!--Footer-->
+		<div class="footer">
+			<div class="btn-group">
+				<a class="btn btn-default" href="#home">Home</a>
+				<a class="btn btn-default" href="#skills">Skills</a>
+				<a class="btn btn-default" href="#projects">Projects</a>
+				<a class="btn btn-default" href="#aboutme">About Me</a>
+				<a class="btn btn-default" href="#contactme">Contact Me</a>
+			</div>
+			<ul class="list-inline">
+				<li><i>Copyright &copy; Ryder McMinn 2014</i></li>
+			</ul>
+		</div>
+
 		<!--JavaScript Init-->
 		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/controllers.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
