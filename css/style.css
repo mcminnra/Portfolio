@@ -2,6 +2,27 @@
 	.navbar-socialicons {
 		display: none;
 	}
+    .name {
+        color: black !important;
+        width: auto;
+        font-family: 'Special Elite', cursive;
+    }
+    .jumbotron .btn {
+        display: none;
+    }
+    .projects .btn-group {
+        display: none;
+    }
+    .footer-nav{
+        display: none;
+    }
+}
+@media only screen and (min-width: 781px) {
+    .name {
+        color: black !important;
+        font-size: 800% !important;
+        font-family: 'Special Elite', cursive;
+    }
 }
 
 
@@ -11,11 +32,6 @@ body {
     background-repeat: repeat;
 }
 /*jumbotron*/
-.name {
-    color: black !important;
-    font-size: 800% !important;
-    font-family: 'Special Elite', cursive;
-}
 .subheader-jumbotron {
     color: black !important;
     opacity: 20 !important;
