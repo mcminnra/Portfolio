@@ -122,7 +122,7 @@
                 <p><i ng-repeat="language in project.languages"> * {{language.name}}</i></p>
                 <p><i ng-repeat="framework in project.frameworks"> * {{framework.name}}</i></p>
                 <div class="well" ng-show="project.description">{{project.description}}</div>
-                <p><a ng-show="{{project.sourcecodelink}}" href="{{project.sourcecodelink}}"> {{project.sourcecode}}</a></p>
+                <p><a ng-show="{{project.sourcecode}}" ng-href="https://www.github.com/rmcminn/{{project.sourcecodelink}}"> {{project.sourcecode}}</a></p>
             </div>
             <div class="col-md-5">
                 <img src="{{project.imgsrc}}" alt="...">
@@ -153,6 +153,10 @@
         <div class="row contactme-sociallinks text-center">
             <a class="navbar-link active text-right" href="https://www.elance.com/s/mcminnra/"><i class="fa fa-bolt fa-3x"> Hire Me!</i></a>
          </div>
+        <div class="text-center">
+            <p><a href="mailto:mcminnra@gmail.com">mcminnra@gmail.com</a></p>
+        </div>
+        <!-- hide mailer for now
         <hr />
         <div class="row text-center contactme-form">
             <form method="post" action="./php/sendmail.php">
@@ -175,7 +179,7 @@
             </form>
         </div>
     </div>
-
+    -->
     <!--Footer-->
     <div class="footer">
         <hr />
@@ -196,7 +200,6 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
-    <script src="preloader.js"></script>
     <script src="js/blur.js"></script>
     <script src="js/script.js"></script>
     </body>

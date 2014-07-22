@@ -42,7 +42,7 @@ var projects = [
 			}
 		],
 		'description' : 'An HTML5 web application developed for the Indiana Department of Environmental Management that allowed inspectors to take detailed notes regarding site inspections. The application uses ASP.NET for the business layer.',
-		'sourcecode' : '*Source code not publicly available, but can be produced on request',
+		'sourcecode' : '',
 		'sourcecodelink' : ''
 	},
 	{
@@ -61,7 +61,7 @@ var projects = [
 			}
 		],
 		'description' : 'An iOS version of the original HTML5 Field Notes application. The application uses the same ASP.NET web service for the business layer.',
-		'sourcecode' : '*Source code not publicly available, but can be produced on request',
+		'sourcecode' : '',
 		'sourcecodelink' : ''
 	},
 	{
@@ -81,7 +81,7 @@ var projects = [
 		],
 		'description' : 'A simple Java Application that calculates GPA according to IU\'s standards.',
 		'sourcecode' : 'GradeCalculatorIU (GitHub)',
-		'sourcecodelink' : 'https://github.com/rmcminn/GradeCalculatorIU'
+		'sourcecodelink' : 'GradeCalculatorIU'
 	},
 	{
 		'classtags' : 'PROJECT HTML5CSS JAVASCRIPT PERSONAL',
@@ -115,7 +115,7 @@ var projects = [
 		],
 		'description' : 'My portfolio website that I use to display my projects and other assorted things.',
 		'sourcecode' : 'Portfolio (GitHub)',
-		'sourcecodelink' : 'https://www.github.com/rmcminn/Portfolio'
+		'sourcecodelink' : 'Portfolio'
 	},
 	{
 		'classtags' : 'PROJECT JAVA PERSONAL',
@@ -134,7 +134,7 @@ var projects = [
 		],
 		'description' : 'A simple program used to track bitcoin prices and saves them to a .csv',
 		'sourcecode' : 'BitCoinInvestor (GitHub)',
-		'sourcecodelink' : 'https://www.github.com/rmcminn/BitCoinInvestor'
+		'sourcecodelink' : 'BitCoinInvestor'
 	},
 	{
 		'classtags' : 'PROJECT CSHARP PERSONAL',
@@ -153,6 +153,6 @@ var projects = [
 		],
 		'description' : 'A simple program used to manipulate an access database of video games',
 		'sourcecode' : 'VideoGameDatabaseManager (GitHub)',
-		'sourcecodelink' : 'https://www.github.com/rmcminn/VideoGameDatabaseManager'
+		'sourcecodelink' : 'VideoGameDatabaseManager'
 	}
 ];
