@@ -6,22 +6,46 @@
 
 
 body {
-	overflow-x: hidden; 
+	overflow-x: hidden;
+    background-image: url('../img/presence.png');
+    background-repeat: repeat;
 }
 /*jumbotron*/
 .name {
-	margin-bottom: 10%;
+    color: black !important;
+    font-size: 900% !important;
+    font-family: 'Special Elite', cursive;
+}
+.subheader-jumbotron {
+    color: black !important;
+    opacity: 20 !important;
+    font-size: 200% !important;
 }
 
 .jumbotron {
-	height: 50em;
-	background-image: url('../img/sharkjumbotron.jpg');
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: white;
+	height: 100vh;
+    background: none;
+}
+.jumbotron-bg {
+    background-image: url('../img/jumbotronshark.jpg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center 75% !important;
+    background-color: white;
+}
+
+.subheader-jumbotron {
+    color: black !important;
+    opacity: 20 !important;
+    font-size: 200% !important;
 }
 /* end jumbotron*/
+
+
+.content-container {
+    background-color:white;
+    padding-top: 2.5%
+}
 
 
 /*Projects*/
@@ -30,30 +54,58 @@ body {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	margin-right: 2.5%;
+    padding-bottom: 2%;
+    padding-top:2%;
+    border: solid black 2px;
+}
+.project-title {
+    font-family: 'Special Elite', cursive;
 }
 .project img{
-	width: 80%;
+	width: 80% !important;
+    height: 80% !important;
+    margin-top:10%;
 	margin-left:10%;
 	margin-right: 10%;
+    margin-bottom: 10%;
 }
 /*end projects*/
 
 /*About Me*/
+.aboutme {
+}
+.aboutme-title {
+    font-family: 'Special Elite', cursive;
+}
 .aboutme-text {
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 }
-/*end about me*/
+.aboutme-img {
+    height: 100% !important;
+    width: 100% !important;
+}
 
+/*end about me*/
+/*contact me*/
+.contactme-title {
+    font-family: 'Special Elite', cursive;
+}
+.contactme-sociallinks a {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.contactme-form {
+    margin-top: 4%;
+    margin-right:10%;
+    width: 80%;
+    margin-left:10%;
+}
+/*end contact me*/
 /*footer*/
 .footer {
 	margin-left: 5%;
 	margin-bottom: 1.5%;
-	margin-bottom: 1.5%;
+	margin-right: 5%;
 }
 /*end footer*/
-
-/*extra classes*/
-.text-shadow {
-	text-shadow: 2px 2px white;
-}

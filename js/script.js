@@ -13,3 +13,13 @@ $(function() {
     }
   });
 });
+
+/*blur jumbotron
+$(document).ready( function() {
+    $('.jumbotron-bg').blurjs({
+        source: '.jumbotron-bg',
+        radius: 4,
+        overlay: 'rgba(0, 0, 0, .0)'
+    });
+});
+    */
