@@ -31,7 +31,7 @@ var skills = [
 				'name':'Foundation 5'
 			},
 			{
-				'name':'Hover.css'
+				'name':'Font Awesome'
 			},
 			{
 				'name':'Bootstrap'
