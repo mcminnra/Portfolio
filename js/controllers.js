@@ -9,7 +9,7 @@ angular.module('myApp.controllers', [])
 
 var projects = [
 	{
-		'classtags' : 'PROJECT HTML5CSS JAVASCRIPT CSHARP',
+		'classtags' : 'PROJECT HTML5CSS JAVASCRIPT CSHARP PROFESSIONAL',
 		"name" : "IDEM Field Notes - HTML5",
 		"imgsrc" : "img/fieldnoteshtml5.png",
 		"type" : 'Professional',
@@ -46,7 +46,7 @@ var projects = [
 		'sourcecodelink' : ''
 	},
 	{
-		'classtags' : 'PROJECT OBJECTIVEC',
+		'classtags' : 'PROJECT OBJECTIVEC PROFESSIONAL',
 		"name" : "IDEM Field Notes - iOS",
 		"imgsrc" : "img/fieldnotesios.png",
 		'type' : 'Professional',
@@ -65,7 +65,7 @@ var projects = [
 		'sourcecodelink' : ''
 	},
 	{
-		'classtags' : 'PROJECT JAVA',
+		'classtags' : 'PROJECT JAVA PERSONAL',
 		"name" : "Indiana University GPA Calculator",
 		"imgsrc" : "img/gradecalculatoriu.jpg",
 		'type' : 'Personal',
@@ -84,7 +84,7 @@ var projects = [
 		'sourcecodelink' : 'https://github.com/rmcminn/GradeCalculatorIU'
 	},
 	{
-		'classtags' : 'PROJECT HTML5CSS JAVASCRIPT',
+		'classtags' : 'PROJECT HTML5CSS JAVASCRIPT PERSONAL',
 		"name" : "Portfolio",
 		"imgsrc" : "img/portfolio.png",
 		'type' : 'Personal',
@@ -118,7 +118,7 @@ var projects = [
 		'sourcecodelink' : 'https://www.github.com/rmcminn/Portfolio'
 	},
 	{
-		'classtags' : 'PROJECT JAVA',
+		'classtags' : 'PROJECT JAVA PERSONAL',
 		"name" : "BitCoinInvestor",
 		"imgsrc" : "img/bitcoininvestor.png",
 		'type' : 'Personal',
@@ -137,7 +137,7 @@ var projects = [
 		'sourcecodelink' : 'https://www.github.com/rmcminn/BitCoinInvestor'
 	},
 	{
-		'classtags' : 'PROJECT CSHARP',
+		'classtags' : 'PROJECT CSHARP PERSONAL',
 		"name" : "VideoGameDatabaseManager",
 		"imgsrc" : "img/videogamedatabasemanager.png",
 		'type' : 'Personal',

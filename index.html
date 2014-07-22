@@ -3,7 +3,9 @@
 <html ng-app="portfolio">
 	<head>
 		<title>Ryder McMinn | Portfolio</title>
-
+        <link rel="icon"
+              type="image/png"
+              href="favicon.ico">
         <!--Meta-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,21 +48,21 @@
                         <li><a href="#contactme">Contact Me</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right navbar-socialicons">
-                        <li><a class="navbar-link" href="http://www.github.com/rmcminn"><i class="fa fa-github"></i> | GitHub</a></li>
-                        <li><a class="navbar-link" href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506"><i class="fa fa-linkedin"></i> | LinkedIn</a></li>
+                        <li><a class="navbar-link" href="http://www.github.com/rmcminn"><i class="fa fa-github fa-lg"></i></a></li>
+                        <li><a class="navbar-link" href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                        <li><a class="navbar-link" href="http://careers.stackoverflow.com/rydermcminn"><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+                        <li><a class="navbar-link active" href="https://www.elance.com/s/mcminnra/"><i class="fa fa-bolt fa-lg"></i> Hire Me!</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container text-center">
             <h1 class="name">Ryder McMinn</h1>
+            <i class="fa fa-anchor fa-4x"></i>
             <h1 class="subheader-jumbotron">Student. Web Engineer. Shark Enthusiast.</h1>
             <br />
-            <p><a class="btn btn-primary btn-lg" role="button" href="#projects">Check Out My Projects! <i class="fa fa-arrow-down"></i></a></p>
+            <p><a class="btn btn-primary btn-lg" role="button" href="#projects">Projects! Go! <i class="fa fa-arrow-down"></i></a></p>
         </div>
-        <!-- until image can be editted
-        <img class="text-center" src="img/jumbotronshark.jpg" style="width: 60%; height:50%; margin-left:20%; margin-right:20%;"/>
-        -->
     </div>
     </div>
     </div>
@@ -91,29 +93,38 @@
         <a name="projects"></a>
         <h2 class="project-title text-center"><span class="glyphicon glyphicon-fire"></span> Projects</h2>
         <h2 class="text-center"><small><em>Professional and Personal</em></small></h2>
+        <hr />
         <div class="text-center">
-        <div class="btn-group">
+            <div class="btn-group">
             <button type="button" class="btn btn-default" onClick="$('.PROJECT').show();">All</button>
+                </div>
+        <div class="btn-group">
             <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.JAVA').show();">Java</button>
             <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.HTML5CSS').show();">HTML/CSS</button>
             <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.JAVASCRIPT').show();">JavaScript</button>
             <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.CSHARP').show();">C#</button>
             <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.OBJECTIVEC').show();">Objective C</button>
-            <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.PYTHON').show();">Python</button>
         </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.PROFESSIONAL').show();">Professional</button>
+                <button type="button" class="btn btn-default" onClick="$('.PROJECT').hide(); $('.PERSONAL').show();">Personal</button>
+            </div>
         </div>
         <hr />
 
         <div class="row project {{project.classtags}}" ng-repeat="project in projectCtrl.projects">
-            <div class="col-md-6">
+            <div class="col-md-2 project-type">
                 <h4><i>{{project.type}}</i></h4>
+            </div>
+            <div class="col-md-5">
                 <h3>{{project.name}}</h3>
+                <hr />
                 <p><i ng-repeat="language in project.languages"> * {{language.name}}</i></p>
                 <p><i ng-repeat="framework in project.frameworks"> * {{framework.name}}</i></p>
                 <div class="well" ng-show="project.description">{{project.description}}</div>
                 <p><a ng-show="{{project.sourcecodelink}}" href="{{project.sourcecodelink}}"> {{project.sourcecode}}</a></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <img src="{{project.imgsrc}}" alt="...">
             </div>
         </div>
@@ -131,14 +142,21 @@
     <!--Contact Me-->
     <div class="contactme">
         <a name="contactme"></a>
-        <h2 class="contactme-title text-center"><span class="glyphicon glyphicon-envelope"></span> Contact Me</h2>
+        <h2 class="contactme-title text-center"><span class="glyphicon glyphicon-envelope"></span> Contact Me!</h2>
         <hr />
         <div class="row contactme-sociallinks text-center">
-            <a class="navbar-link" href="http://www.github.com/rmcminn"><i class="fa fa-github"></i> | GitHub</a>
-            <a class="navbar-link" href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506"><i class="fa fa-linkedin"></i> | LinkedIn</a>
+            <a class="navbar-link" href="http://www.github.com/rmcminn"><i class="fa fa-github fa-4x"></i></a>
+            <a class="navbar-link" href="http://www.linkedin.com/pub/ryder-mcminn/76/a96/506"><i class="fa fa-linkedin fa-4x"></i></a>
+            <a class="navbar-link" href="http://careers.stackoverflow.com/rydermcminn"><i class="fa fa-stack-overflow fa-4x"></i></a>
+
         </div>
+        <div class="row contactme-sociallinks text-center">
+            <a class="navbar-link active text-right" href="https://www.elance.com/s/mcminnra/"><i class="fa fa-bolt fa-3x"> Hire Me!</i></a>
+         </div>
+        <hr />
         <div class="row text-center contactme-form">
-            <form>
+            <form method="post" action="./php/sendmail.php">
+                <h2 class="text-left"><small><i>...or shoot me an email!</i></small></h2>
                 <div class="form-group">
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon">@</span>
@@ -161,14 +179,12 @@
     <!--Footer-->
     <div class="footer">
         <hr />
-        <div class="btn-group">
-            <a class="btn btn-default" href="#home">Home</a>
-            <a class="btn btn-default" href="#aboutme">About Me</a>
-            <a class="btn btn-default" href="#projects">Projects</a>
-            <a class="btn btn-default" href="#contactme">Contact Me</a>
-        </div>
-        <ul class="list-inline">
-            <li><i>Copyright &copy; Ryder McMinn 2014</i></li>
+        <ul class="footer-nav">
+            <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+            <li class="copyright"><i>Copyright &copy; Ryder McMinn 2014</i></li>
         </ul>
     </div>
     </div>
@@ -180,6 +196,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <script src="preloader.js"></script>
     <script src="js/blur.js"></script>
     <script src="js/script.js"></script>
     </body>
