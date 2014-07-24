@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', [])
+angular.module('myApp.controllers', ['ngSanitize'])
   .controller('ProjectController', function() {
   	this.projects = projects;
   });
@@ -42,8 +42,7 @@ var projects = [
 			}
 		],
 		'description' : 'An HTML5 web application developed for the Indiana Department of Environmental Management that allowed inspectors to take detailed notes regarding site inspections. The application uses ASP.NET for the business layer.',
-		'sourcecode' : '',
-		'sourcecodelink' : ''
+		'sourcecode' : '<i>*Source code not publicly available, but can be produced on request</i>'
 	},
 	{
 		'classtags' : 'PROJECT OBJECTIVEC PROFESSIONAL',
@@ -61,8 +60,7 @@ var projects = [
 			}
 		],
 		'description' : 'An iOS version of the original HTML5 Field Notes application. The application uses the same ASP.NET web service for the business layer.',
-		'sourcecode' : '',
-		'sourcecodelink' : ''
+		'sourcecode' : '<i>*Source code not publicly available, but can be produced on request</i>'
 	},
 	{
 		'classtags' : 'PROJECT JAVA PERSONAL',
@@ -80,8 +78,7 @@ var projects = [
 			}
 		],
 		'description' : 'A simple Java Application that calculates GPA according to IU\'s standards.',
-		'sourcecode' : 'GradeCalculatorIU (GitHub)',
-		'sourcecodelink' : 'GradeCalculatorIU'
+		'sourcecode' : '<a href="https://www.github.com/rmcminn/GradeCalculatorIU"><i class="fa fa-github"></i> GradeCalculatorIU</a>'
 	},
 	{
 		'classtags' : 'PROJECT HTML5CSS JAVASCRIPT PERSONAL',
@@ -114,8 +111,7 @@ var projects = [
 			}
 		],
 		'description' : 'My portfolio website that I use to display my projects and other assorted things.',
-		'sourcecode' : 'Portfolio (GitHub)',
-		'sourcecodelink' : 'Portfolio'
+		'sourcecode' : '<a href="https://www.github.com/rmcminn/Portfolio}"><i class="fa fa-github"></i> Portfolio</a>'
 	},
 	{
 		'classtags' : 'PROJECT JAVA PERSONAL',
@@ -133,8 +129,7 @@ var projects = [
 			}
 		],
 		'description' : 'A simple program used to track bitcoin prices and saves them to a .csv',
-		'sourcecode' : 'BitCoinInvestor (GitHub)',
-		'sourcecodelink' : 'BitCoinInvestor'
+		'sourcecode' : '<a href="https://www.github.com/rmcminn/BitCoinInvestor"><i class="fa fa-github"></i> BitCoinInvestor</a>'
 	},
 	{
 		'classtags' : 'PROJECT CSHARP PERSONAL',
@@ -152,7 +147,6 @@ var projects = [
 			}
 		],
 		'description' : 'A simple program used to manipulate an access database of video games',
-		'sourcecode' : 'VideoGameDatabaseManager (GitHub)',
-		'sourcecodelink' : 'VideoGameDatabaseManager'
+		'sourcecode' : '<a href="https://www.github.com/rmcminn/VideoGameDatabaseManager"><i class="fa fa-github"></i> VideoGameDatabaseManager</a>'
 	}
 ];

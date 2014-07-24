@@ -14,12 +14,11 @@ $(function() {
   });
 });
 
-/*blur jumbotron
+/*blur jumbotron*/
 $(document).ready( function() {
     $('.jumbotron-bg').blurjs({
         source: '.jumbotron-bg',
-        radius: 4,
+        radius: 10,
         overlay: 'rgba(0, 0, 0, .0)'
     });
 });
-*/

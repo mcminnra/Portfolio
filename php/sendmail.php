@@ -1,42 +1,48 @@
 <?php
+/*
 
-if(isset($_POST['email'])) {
+contact script written for my website
 
+Author: Ryder McMinn
 
+*/
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
+//my email
 
-    $email_to = "mcminnra@gmail.com";
-
-    $email_subject = "Message from Web Portfolio";
-
-
-    $sender_email = $_POST['email']; // required
-    $subject = "Email from Web Portfolio Form: " + $_POST['subject']; // required
-    $message = $_POST['message']; // required
-
-
-    $email_message = "Form details below.\n\n";
+$ryderEmail = "mcminnra@gmail.com";
 
 
 
-    function clean_string($string) {
+//Form Variables
 
-      $bad = array("content-type","bcc:","to:","cc:","href");
+$email;
 
-      return str_replace($bad,"",$string);
+$subject;
 
-    }
+$message;
 
-// create email headers
 
-$headers = 'From: '.$sender_email."\r\n".
+$email = $_REQUEST["email"];
 
-'Reply-To: '.$sender_email."\r\n" .
+$subject = $_REQUEST["subject"];
 
-'X-Mailer: PHP/' . phpversion();
+$message = $_REQUEST["message"];
 
-@mail($email_to, $subject, $message, $headers);
+
+
+$message = "[NAME]" . $name . "[NAME]" . "\r\n" .
+
+"[EMAIL]" . $email . "[EMAIL]" . "\r\n" .
+
+"[MESSAGE]" . $message . "[MESSAGE]";
+
+$message = wordwrap($message, 70, "\r\n");
+
+
+
+mail($ryderEmail, $subject, $message);
+
+header( 'http://rydermcminn.com/#contactme' ) ;
 
 ?>
 
@@ -44,14 +50,4 @@ $headers = 'From: '.$sender_email."\r\n".
 
 <h1>Successfully Sent</h1>
 
-
-
 Thank you for contacting me. We will be in touch with you very soon.
-
-
-
-<?php
-
-}
-
-?>

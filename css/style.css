@@ -32,28 +32,23 @@ body {
     background-repeat: repeat;
 }
 /*jumbotron*/
-.subheader-jumbotron {
-    color: black !important;
-    opacity: 20 !important;
-    font-size: 200% !important;
-}
 
 .jumbotron {
 	height: 100vh;
     background: none;
 }
 .jumbotron-bg {
-    background-image: url('../img/jumbotronshark.jpg');
-    background-size: 50%;
+    background-image: url('../img/sharkbwbg.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 75% !important;
+    background-position: center center !important;
     background-color: white;
 }
 
 .subheader-jumbotron {
     color: black !important;
-    opacity: 20 !important;
     font-size: 200% !important;
+
 }
 /* end jumbotron*/
 
