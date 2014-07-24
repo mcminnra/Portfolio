@@ -9,3 +9,5 @@ rydermcminn.com
 - Bootstrap
 - Angular.JS
 - Node.JS
+- Blur.JS
+- Font-Awesome
