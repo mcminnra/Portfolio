@@ -11,3 +11,4 @@ rydermcminn.com
 - Node.JS
 - Blur.JS
 - Font-Awesome
+- Pace.js
