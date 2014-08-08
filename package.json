@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "description": "My website where I display my projects and other assorted things",
   "main": "index.html",
-  "dependencies": {
-    "karma": "^0.12.16",
-    "karma-chrome-launcher": "^0.1.4",
-    "karma-jasmine": "^0.1.5"
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-banner": "^0.2.3",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-string-replace": "^0.2.7"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": ""
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/rmcminn/Portfolio.git"
