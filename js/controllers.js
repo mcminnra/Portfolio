@@ -8,6 +8,42 @@ angular.module('myApp.controllers', ['ngSanitize'])
   });
 
 var projects = [
+    {
+        'classtags' : 'PROJECT HTML5CSS JAVASCRIPT PROFESSIONAL',
+        "name" : "www.beetownhive.com - Hive Nightclub",
+        "imgsrc" : "img/hive.png",
+        "type" : 'Professional',
+        'languages' : [
+            {
+                'name':'HTML5'
+            },
+            {
+                'name':'CSS'
+            },
+            {
+                'name':'JavaScript'
+            }
+        ],
+        'frameworks' : [
+            {
+                'name':'JQuery'
+            },
+            {
+                'name':'Bootstrap 3'
+            },
+            {
+                'name':'Pace.JS'
+            },
+            {
+                'name':'Blur.JS'
+            },
+            {
+                'name':'Countdown.JS'
+            }
+        ],
+        'description' : 'Did some pro-bono web development and technical consulting for a new startup nightclub in Bloomington, Indiana called Hive.  I used Bootstrap and JQuery to create a sleek and modern launch page for their club.',
+        'sourcecode' : '<a href="http://www.beetownhive.com">www.beetownhive.com</a>'
+    },
 	{
 		'classtags' : 'PROJECT HTML5CSS JAVASCRIPT CSHARP PROFESSIONAL',
 		"name" : "IDEM Field Notes - HTML5",
