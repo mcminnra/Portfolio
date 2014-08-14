@@ -3,7 +3,7 @@ Portfolio [![Build Status](https://travis-ci.org/rmcminn/Portfolio.svg?branch=ma
 
 My website portfolio for my projects and other assorted things
 
-rydermcminn.com
+[rydermcminn.com](http://www.rydermcminn.com)
 
 ##Frameworks
 - Bootstrap
