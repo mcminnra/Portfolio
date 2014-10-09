@@ -144,7 +144,10 @@ var projects = [
 			},
 			{
 				'name' : 'AngularJS'
-			}
+			},
+      {
+        'name' : 'Lightbox'
+      }
 		],
 		'description' : 'My portfolio website that I use to display my projects and other assorted things.',
 		'sourcecode' : '<a href="https://www.github.com/rmcminn/Portfolio}"><i class="fa fa-github"></i> Portfolio</a>'

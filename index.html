@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pace.css">
-
+    <link href="bower_components/lightbox/css/lightbox.css"   rel="stylesheet" />
     <link href="css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     end PRODSTYLE imports-->
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/pace.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="bower_components/lightbox/css/lightbox.css"   rel="stylesheet" />
     <link href="css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <!--end DEVSTYLE imports-->
@@ -71,7 +72,7 @@
             <div class="container text-center">
                 <h1 class="name">Ryder McMinn</h1>
                 <i class="fa fa-anchor fa-4x"></i>
-                <h1 class="subheader-jumbotron">University Student. MEAN Full-Stack Web Engineer. Shark Enthusiast.</h1>
+                <h1 class="subheader-jumbotron">Student. Developer. Shark Enthusiast.</h1>
                 <br />
                 <p><a class="btn btn-primary btn-lg" role="button" href="#projects">Projects! Go! <i class="fa fa-arrow-down"></i></a></p>
             </div>
@@ -138,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <img src="{{project.imgsrc}}" alt="...">
+                    <a href="{{project.imgsrc}}" data-lightbox="{{project.name}}" data-title="{{project.name}}"><img src="{{project.imgsrc}}" alt="..."></a>
                 </div>
             </div>
 
@@ -210,6 +211,7 @@
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular/angular-sanitize.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/lightbox/js/lightbox.js"></script>
 <script src="js/app.js"></script>
 <script src="js/pace.min.js"></script>
 <script src="js/controllers.js"></script>
@@ -222,6 +224,7 @@ end PRODSCRIPT imports-->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular/angular-sanitize.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/lightbox/js/lightbox.js"></script>
 <script src="js/app.js"></script>
 <script src="js/pace.js"></script>
 <script src="js/controllers.js"></script>
