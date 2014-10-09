@@ -12,3 +12,4 @@ My website portfolio for my projects and other assorted things
 - Blur.JS
 - Font-Awesome
 - Pace.js
+- Lightbox
