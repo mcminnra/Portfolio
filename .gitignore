@@ -1,12 +1,19 @@
-node_modules/
-bower_components/
-test/
-config/
-production/
-presentations/
+# Composer
+composer.lock
+composer.phar
+vendor
 
-deke/
-demos/
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp
 
-projectFilesBackup
-.idea/
+# User themes
+themes/*
+!themes/index.html
+!themes/default/*
+
+# User config
+config.php
