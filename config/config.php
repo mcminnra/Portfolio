@@ -18,18 +18,18 @@
 /*
  * BASIC
  */
-// $config['site_title'] = 'Pico';              // Site title
+$config['site_title'] = 'Ryder McMinn';              // Site title
 // $config['base_url'] = '';                    // Override base URL (e.g. http://example.com)
 
 /*
  * THEME
  */
-// $config['theme'] = 'default';                // Set the theme (defaults to "default")
-// $config['twig_config'] = array(              // Twig settings
-//	'cache' => false,	                        // To enable Twig caching change this to CACHE_DIR
-//	'autoescape' => false,                      // Autoescape Twig vars
-//	'debug' => false                            // Enable Twig debug
-// );
+$config['theme'] = 'pico-bootstrap';                // Set the theme (defaults to "default")
+$config['twig_config'] = array(              // Twig settings
+	'cache' => false,	                        // To enable Twig caching change this to CACHE_DIR
+	'autoescape' => false,                      // Autoescape Twig vars
+	'debug' => false                            // Enable Twig debug
+);
 
 /*
  * CONTENT
