@@ -24,7 +24,7 @@ $config['site_title'] = 'Ryder McMinn';              // Site title
 /*
  * THEME
  */
-$config['theme'] = 'pico-bootstrap';                // Set the theme (defaults to "default")
+$config['theme'] = 'bootstrap_pico';                // Set the theme (defaults to "default")
 $config['twig_config'] = array(              // Twig settings
 	'cache' => false,	                        // To enable Twig caching change this to CACHE_DIR
 	'autoescape' => false,                      // Autoescape Twig vars
@@ -38,12 +38,12 @@ $config['twig_config'] = array(              // Twig settings
 // $config['pages_order_by'] = 'alpha';           // Order pages by "alpha" or "date"
 // $config['pages_order'] = 'asc';                // Order pages "asc" or "desc"
 // $config['excerpt_length'] = 50;                // The pages excerpt length (in words)
-// $config['content_dir'] = 'content-sample/';    // Content directory
+$config['content_dir'] = 'content/';    // Content directory
 
 /*
  * TIMEZONE
  */
-// date_default_timezone_set('UTC');              // Timezone may be reqired by your php install
+date_default_timezone_set('UTC');              // Timezone may be reqired by your php install
 
 /*
  * CUSTOM
