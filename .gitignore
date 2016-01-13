@@ -12,3 +12,6 @@ Thumbs.db
 
 # IDE Files
 .idea/
+
+#Bootstrap Pico Files
+themes/bootstrap_pico
