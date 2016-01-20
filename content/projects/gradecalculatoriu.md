@@ -1,5 +1,5 @@
-/*
-    Title: Grade Calculator IU
-*/
+---
+Title: Grade Calculator IU
+---
 
 ## Grade Calculator IU

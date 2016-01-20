@@ -1,8 +1,8 @@
-/*
+---
 Title: Home
 Description: Amateur Mad Scientist, Ryder McMinn
 Author: Menu
-*/
+---
 
 <div class="jumbotron darken">
   <div class="container">
@@ -20,7 +20,7 @@ Author: Menu
 
     <div class="row text-center">
         <h2>Projects</h2>
-        <a class="btn btn-primary" href="./projects">Projects</a>
+        <a class="btn btn-primary" href="./?projects">Projects</a>
     </div>
 
     <div class="row text-center">

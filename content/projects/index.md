@@ -1,21 +1,21 @@
-/*
+---
 Title: Projects
 Author: Menu
-*/
+---
 
 ## Projects
 <hr/>
 
 ### Personal
 
-[Portfolio](./portfolio)
+[Portfolio](?projects/portfolio)
 
-[GradeCalculatorIU](./gradecalculatoriu)
+[GradeCalculatorIU](?projects/gradecalculatoriu)
 
 ### Professional
 
-[DraftOnce](./draftonce)
+[DraftOnce](?projects/draftonce)
 
-[Hive](./hive)
+[Hive](?projects/hive)
 
-[IDEM Field Notes](./idemfieldnotes)
+[IDEM Field Notes](?projects/idemfieldnotes)

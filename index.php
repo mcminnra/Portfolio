@@ -1,15 +1,20 @@
-<?php
+<?php // @codingStandardsIgnoreFile
 
-define('ROOT_DIR', realpath(dirname(__FILE__)) . '/');
-define('LIB_DIR', ROOT_DIR . 'lib/');
-define('VENDOR_DIR', ROOT_DIR . 'vendor/');
-define('PLUGINS_DIR', ROOT_DIR . 'plugins/');
-define('THEMES_DIR', ROOT_DIR . 'themes/');
-define('CONFIG_DIR', ROOT_DIR . 'config/');
-define('CACHE_DIR', LIB_DIR . 'cache/');
+// check PHP version
+if (version_compare(PHP_VERSION, '5.3.6', '<')) {
+    die('Pico requires PHP 5.3.6 or above to run');
+}
 
-define('CONTENT_EXT', '.md');
+// load dependencies
+require_once(__DIR__ . '/vendor/autoload.php');
 
-require_once(VENDOR_DIR . 'autoload.php');
-require_once(LIB_DIR . 'pico.php');
-$pico = new Pico();
+// instance Pico
+$pico = new Pico(
+    __DIR__,    // root dir
+    'config/',  // config dir
+    'plugins/', // plugins dir
+    'themes/'   // themes dir
+);
+
+// run application
+echo $pico->run();
