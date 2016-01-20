@@ -5,15 +5,13 @@ Author: Menu
 ---
 
 <div class="jumbotron darken">
-  <div class="container">
-    <h1 class="text-center main-title">Ryder McMinn</h1>
-    <h1 class="text-center main-title-sub">Amateur Mad Scientist <i class="fa fa-flask"></i></h1>
-    <ul class="social-media-menu text-center"">
+    <h1 class="text-center">Ryder McMinn</h1>
+    <h1 class="text-center"><small>Amateur Mad Scientist <i class="fa fa-flask"></small></i></h1>
+    <ul class="list-inline text-center">
       <li><a href="https://github.com/rmcminn"><i class="fa fa-github fa-4x"></i></a></li>
       <li><a href="http://careers.stackoverflow.com/rydermcminn"><i class="fa fa-stack-overflow fa-4x"></i></a></li>
       <li><a href="https://www.linkedin.com/in/rydermcminn"><i class="fa fa-linkedin fa-4x"></i></a></li>
     </ul>
-  </div>
 </div>
 
 <div class="container">
