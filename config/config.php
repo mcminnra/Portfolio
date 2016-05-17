@@ -26,7 +26,7 @@ $config['site_title'] = 'Ryder McMinn';              // Site title
 /*
  * THEME
  */
-$config['theme'] = 'bootstrap_pico';                // Set the theme (defaults to "default")
+$config['theme'] = 'phantom';                // Set the theme (defaults to "default")
 $config['twig_config'] = array(              // Twig settings
      'cache' => false,                        // To enable Twig caching change this to a path to a writable directory
      'autoescape' => false,                   // Auto-escape Twig vars

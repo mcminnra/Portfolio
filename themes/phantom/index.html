@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+  	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+  	{% if meta.description %}
+  	<meta name="description" content="{{ meta.description }}">
+  	{% endif %}{% if meta.robots %}
+  	<meta name="robots" content="{{ meta.robots }}">
+  	{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for Ryder McMinn">
+    <meta name="author" content="Ryder McMinn">
+
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{theme_url}}/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="{{ base_url }}" class="logo">
+									<span class="symbol"><img src="{{ theme_url }}/images/logo.svg" alt="" /></span><span class="title">{{ site_title }}</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							{% for page in pages if page.author == "Menu" %}
+            	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            	{% endfor %}
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							{{ content }}
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="{{ theme_url }}/assets/php/sendmail.php">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form>
+							</section>
+
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/rydermcminn" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="http://stackoverflow.com/cv/rydermcminn" class="icon style2 fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+									<li><a href="https://github.com/rmcminn" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; 2016 Ryder McMinn. All rights reserved</li><li>Modified Design from: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ theme_url }}/assets/js/jquery.min.js"></script>
+			<script src="{{ theme_url }}/assets/js/skel.min.js"></script>
+			<script src="{{ theme_url }}/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{ theme_url }}/assets/js/main.js"></script>
+
+	</body>
+</html>
