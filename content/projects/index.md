@@ -11,3 +11,5 @@ Author: Menu
 [GradeCalculatorIU](?projects/gradecalculatoriu)
 
 [Hive](?projects/hive)
+
+[Kaggle-Titanic](?projects/kaggle-titanic)
