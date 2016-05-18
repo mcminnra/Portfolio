@@ -20,6 +20,10 @@ Title: Portfolio
         </thead>
         <tbody>
           <tr>
+            <td>May 18th, 2016</td>
+            <td>Added Kaggle-Titanic to Portfolio</td>
+          </tr>
+          <tr>
             <td>May 17th, 2016</td>
             <td>Added Portfolio project to website</td>
           </tr>

@@ -10,7 +10,21 @@ Author: Menu
 </header>
 
 
+
 <section class="tiles">
+
+<article class="style4"> <!-- Kaggle-Titanic -->
+  <span class="image">
+    <img src="./themes/phantom/images/projects/kaggle-titanicthumb.png" alt="" />
+  </span>
+  <a href="./?projects/kaggle-titanic">
+    <h2>Kaggle-Titanic</h2>
+    <div class="content">
+      <p>Script for Titanic Kaggle Competition</p>
+    </div>
+  </a>
+</article>
+
   <article class="style1"> <!-- Portfolio -->
     <span class="image">
     	<img src="./themes/phantom/images/projects/portfoliothumb.png" alt="" />
