@@ -44,7 +44,7 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							{% for page in pages if page.author == "Menu" %}
+							{% for page in pages %}
             	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
             	{% endfor %}
 						</ul>

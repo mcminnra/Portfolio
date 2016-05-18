@@ -1,7 +1,6 @@
 ---
 Title: Home
 Description: Amateur Mad Scientist, Ryder McMinn
-Author: Menu
 ---
 
 <header>
