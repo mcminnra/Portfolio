@@ -20,8 +20,12 @@ Title: Portfolio
         </thead>
         <tbody>
           <tr>
+            <td>May 19th, 2016</td>
+            <td>Added MC Logo</td>
+          </tr>
+          <tr>
             <td>May 18th, 2016</td>
-            <td>Added Kaggle-Titanic to Portfolio</td>
+            <td>Added Kaggle-Titanic</td>
           </tr>
           <tr>
             <td>May 17th, 2016</td>
