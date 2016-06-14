@@ -20,6 +20,14 @@ Title: Portfolio
         </thead>
         <tbody>
           <tr>
+            <td>June 14th, 2016</td>
+            <td>Added Github activity to index and projects</td>
+          </tr>
+          <tr>
+            <td>June 14th, 2016</td>
+            <td>Updated Kaggle-Titanic with Kaggle Account</td>
+          </tr>
+          <tr>
             <td>May 19th, 2016</td>
             <td>Added MC Logo</td>
           </tr>
@@ -34,5 +42,8 @@ Title: Portfolio
         </tbody>
       </table>
     </div>
+
+    <hr/>
+    <section id="feed-portfolio"></section>
   </div>
 </div>

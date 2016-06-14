@@ -198,3 +198,30 @@
 	});
 
 })(jQuery);
+
+GitHubActivity.feed({
+    username: "rmcminn",
+    selector: "#feed",
+    limit: 10 // optional
+});
+
+GitHubActivity.feed({
+    username: "rmcminn",
+		repository: "Portfolio", // optional
+    selector: "#feed-portfolio",
+    limit: 10 // optional
+});
+
+GitHubActivity.feed({
+    username: "rmcminn",
+		repository: "Kaggle-Titanic", // optional
+    selector: "#feed-kaggle-titanic",
+    limit: 10 // optional
+});
+
+GitHubActivity.feed({
+    username: "rmcminn",
+		repository: "GradeCalculatorIU", // optional
+    selector: "#feed-grade-calculator-IU",
+    limit: 10 // optional
+});

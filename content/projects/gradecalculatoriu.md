@@ -26,5 +26,8 @@ Title: Grade Calculator IU
         </tbody>
       </table>
     </div>
+
+    <hr/>
+    <section id="feed-grade-calculator-IU"></section>
   </div>
 </div>
