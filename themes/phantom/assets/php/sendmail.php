@@ -29,9 +29,9 @@ $message = "[NAME]" . $name . "[NAME]" . "\r\n" .
 
 "[MESSAGE]" . $message . "[MESSAGE]";
 
-$message = wordwrap($message, 70, "\r\n");
+$message = wordwrap($message, 140, "\r\n");
 
-$subject = "Email from rydermcminn.com - From: " . $name
+$subject = "Email from rydermcminn.com - From: " . $name;
 
 mail($ryderEmail, $subject, $message);
 

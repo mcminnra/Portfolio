@@ -225,3 +225,10 @@ GitHubActivity.feed({
     selector: "#feed-grade-calculator-IU",
     limit: 10 // optional
 });
+
+GitHubActivity.feed({
+    username: "rmcminn",
+		repository: "Kaggle-Facebook-V", // optional
+    selector: "#feed-kaggle-facebook-v",
+    limit: 10 // optional
+});

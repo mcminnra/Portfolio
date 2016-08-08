@@ -12,6 +12,18 @@ Description: Amateur Mad Scientist, Ryder McMinn
 
 <section class="tiles">
 
+<article class="style3"> <!-- Kaggle-Facebook-V -->
+  <span class="image">
+    <img src="./themes/phantom/images/projects/kaggle-facebook-vthumb.png" alt="" />
+  </span>
+  <a href="./?projects/kaggle-facebook-v">
+    <h2>Kaggle-Facebook-V</h2>
+    <div class="content">
+      <p>Script for Facebook-V Kaggle Competition</p>
+    </div>
+  </a>
+</article>
+
 <article class="style4"> <!-- Kaggle-Titanic -->
   <span class="image">
     <img src="./themes/phantom/images/projects/kaggle-titanicthumb.png" alt="" />
