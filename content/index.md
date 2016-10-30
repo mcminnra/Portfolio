@@ -12,6 +12,18 @@ Description: Amateur Mad Scientist, Ryder McMinn
 
 <section class="tiles">
 
+<article class="style2"> <!-- NBA Player Value Analysis -->
+  <span class="image">
+    <img src="./themes/phantom/images/projects/nbathumb.png" alt="" />
+  </span>
+  <a href="./?projects/nba">
+    <h2>NBA Player Value Analysis</h2>
+    <div class="content">
+      <p>Script for NBA Player Analysis</p>
+    </div>
+  </a>
+</article>
+
 <article class="style3"> <!-- Kaggle-Facebook-V -->
   <span class="image">
     <img src="./themes/phantom/images/projects/kaggle-facebook-vthumb.png" alt="" />

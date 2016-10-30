@@ -232,3 +232,10 @@ GitHubActivity.feed({
     selector: "#feed-kaggle-facebook-v",
     limit: 10 // optional
 });
+
+GitHubActivity.feed({
+	username: "rmcminn",
+	repository: "NBAPlayerValueAnalysis", // optional
+	selector: "#feed-nba",
+	limit: 10 // optional
+});
