@@ -7,3 +7,9 @@ Thumbs.db
 
 # IDE Files
 .idea/
+
+# Composer
+vendor/
+
+# Pico
+config/config.php.template

@@ -8,7 +8,7 @@
  *
  * @author  Daniel Rudolf
  * @link    http://picocms.org
- * @license http://opensource.org/licenses/MIT
+ * @license http://opensource.org/licenses/MIT The MIT License
  * @version 1.0
  */
 final class DummyPlugin extends AbstractPicoPlugin
@@ -49,7 +49,7 @@ final class DummyPlugin extends AbstractPicoPlugin
      * Triggered after Pico has read its configuration
      *
      * @see    Pico::getConfig()
-     * @param  mixed[] &$config array of config variables
+     * @param  array &$config array of config variables
      * @return void
      */
     public function onConfigLoaded(array &$config)
@@ -292,7 +292,7 @@ final class DummyPlugin extends AbstractPicoPlugin
      * @see    Pico::getTwig()
      * @see    DummyPlugin::onPageRendered()
      * @param  Twig_Environment &$twig          twig template engine
-     * @param  mixed[]          &$twigVariables template variables
+     * @param  array            &$twigVariables template variables
      * @param  string           &$templateName  file name of the template
      * @return void
      */
