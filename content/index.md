@@ -12,6 +12,18 @@ Description: Amateur Mad Scientist, Ryder McMinn
 
 <section class="tiles">
 
+<article class="style1"> <!-- coolbasilbot -->
+  <span class="image">
+    <img src="" alt="" />
+  </span>
+  <a href="./?projects/coolbasilbot">
+    <h2>coolbasilbot</h2>
+    <div class="content">
+      <p>Personal Node.JS GroupMe bot for my friend group</p>
+    </div>
+  </a>
+</article>
+
 <article class="style2"> <!-- NBA Player Value Analysis -->
   <span class="image">
     <img src="./themes/phantom/images/projects/nbathumb.png" alt="" />

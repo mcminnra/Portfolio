@@ -14,3 +14,6 @@ composer.phar
 
 # Pico
 config/config.php.template
+
+#emacs temp files
+*.*~
