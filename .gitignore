@@ -8,12 +8,12 @@ Thumbs.db
 # IDE Files
 .idea/
 
-# Composer
-vendor/
-composer.phar
+# Node
+node_modules
+server.js
 
-# Pico
-config/config.php.template
-
-#emacs temp files
+# emacs temp files
 *.*~
+
+# Theme Example Files
+example/
