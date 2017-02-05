@@ -17,3 +17,7 @@ server.js
 
 # Theme Example Files
 example/
+
+# misc
+robots.txt
+humans.txt
