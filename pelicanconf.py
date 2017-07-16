@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Ryder McMinn'
 SITENAME = 'Ryder McMinn'
+SITESUBTITLE = '(Tech + Code + Data)'
 SITEURL =  '' #'http://www.rydermcminn.com'
 
 PATH = 'content'
@@ -51,13 +52,13 @@ DEFAULT_PAGINATION = 5
 
 # Theme
 THEME = "pelican-themes/attila"
-HEADER_COVER = 'images/space.jpeg'
+HEADER_COVER = '/images/spaceman.jpg'
 
 AUTHORS_BIO = {
   "mcminnra": {
     "name": "Ryder McMinn",
     "cover": "images/spaceman.jpg",
-    "image": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
+    "image": "https://avatars5.githubusercontent.com/u/4528832?v=4&s=460",
     "email": "mailto:mcminnra@gmail.com",
     "website": "http://rydermcminn.com",
     "location": "Bloomington, IN",

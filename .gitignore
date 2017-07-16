@@ -10,6 +10,7 @@ output/
 pelican-themes/
 pelican-plugins/
 *.pid
+content/*
 
 ### ---------- General ---------- ###
 
