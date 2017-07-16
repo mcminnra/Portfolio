@@ -16,6 +16,9 @@ DEFAULT_METADATA = {
     'Status': 'Draft',
 }
 
+#Analytics
+GOOGLE_ANALYTICS = 'UA-46448239-3'
+
  # Static Files
 STATIC_PATHS = [
     'images',
