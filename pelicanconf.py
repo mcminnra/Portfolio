@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Ryder McMinn'
 SITENAME = 'Ryder McMinn'
-SITESUBTITLE = '(Tech + Code + Data)'
-SITEURL =  '' #'http://www.rydermcminn.com'
+SITESUBTITLE = 'Essentially Stuff I Find Interesting'
+SITEURL =  'http://www.rydermcminn.com' #'http://www.rydermcminn.com'
 
 PATH = 'content'
 
@@ -55,12 +55,13 @@ THEME = "pelican-themes/attila"
 HEADER_COVER = '/images/spaceman.jpg'
 
 AUTHORS_BIO = {
-  "mcminnra": {
+  "ryder": {
     "name": "Ryder McMinn",
     "cover": "images/spaceman.jpg",
     "image": "https://avatars5.githubusercontent.com/u/4528832?v=4&s=460",
-    "email": "mailto:mcminnra@gmail.com",
+    "email": "mcminnra@gmail.com",
     "website": "http://rydermcminn.com",
+    "github": "https://www.github.com/rmcminn",
     "location": "Bloomington, IN",
     "bio": "#DataScience Graduate Student at Indiana University // Amateur Mad Scientist and Hopeful Space Explorer."
   }
