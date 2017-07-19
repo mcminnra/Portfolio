@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Ryder McMinn'
 SITENAME = 'Ryder McMinn'
 SITESUBTITLE = 'Essentially Stuff I Find Interesting'
-SITEURL =  'http://www.rydermcminn.com' #'http://www.rydermcminn.com'
+SITEURL = '' #'http://www.rydermcminn.com' in publishconf.py
 
 PATH = 'content'
 
