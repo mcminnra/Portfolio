@@ -11,6 +11,7 @@ pelican-themes/
 pelican-plugins/
 *.pid
 content/*
+.vscode/
 
 ### ---------- General ---------- ###
 
