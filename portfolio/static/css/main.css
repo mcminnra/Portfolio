@@ -102,20 +102,14 @@ textarea {
     width: auto;
 }
 
+body {
+    background-color: #777;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.container {
+    background-color: white;
+    padding: 1%;
+}
 
 /* ==========================================================================
    Helper classes
