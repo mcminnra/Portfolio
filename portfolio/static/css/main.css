@@ -109,6 +109,13 @@ body {
 .container {
     background-color: white;
     padding: 1%;
+    box-shadow: 0 0 30px black;
+    padding:0 15px 0 15px;
+}
+
+/* Underline */
+h2 {
+    padding-top: 2%;
 }
 
 /* ==========================================================================
