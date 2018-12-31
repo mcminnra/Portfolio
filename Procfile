@@ -1,1 +1,1 @@
-web: python3 portfolio/index.py
+web: gunicorn --chdir portfolio index:app
