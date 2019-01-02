@@ -1,7 +1,7 @@
 import logging
 import os
 
-from flask import Flask, render_template, url_for
+from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 application = app  # for Apache WSGI
@@ -13,6 +13,13 @@ if __name__ != '__main__':
     gunicorn_logger = logging.getLogger('gunicorn.error')
     app.logger.handlers = gunicorn_logger.handlers
     app.logger.setLevel(gunicorn_logger.level)  
+
+@app.before_request
+def before_request():
+    # Force https use
+    if request.url.startswith('http://'):
+        url = request.url.replace('http://', 'https://', 1)
+        return redirect(url, code=301)
 
 @app.route('/')
 def index():
