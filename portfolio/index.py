@@ -2,16 +2,17 @@ import logging
 import os
 
 from flask import Flask, redirect, render_template, request, url_for
+from flask_sslify import SSLify
 
 app = Flask(__name__)
-application = app  # for Apache WSGI
+sslify = SSLify(app)
 
 @app.before_request
 def before_request():
-    # Force https use
-    if request.url.startswith('http://') and not app.debug:
-        url = request.url.replace('http://', 'https://', 1)
-        return redirect(url, code=301)
+#     # Force https use
+#     if request.url.startswith('http://') and not app.debug:
+#         url = request.url.replace('http://', 'https://', 1)
+#         return redirect(url, code=301)
 
 @app.route('/')
 def index():
