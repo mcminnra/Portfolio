@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 .headshot {
-    height: 300px;
+    max-height: 300px;
     width: auto;
 }
 
@@ -112,6 +112,14 @@ body {
     box-shadow: 0 0 30px black;
     padding:15px 15px 15px 15px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.info {
+    padding: 0% 2%;
+}
+.info .selfdesc {
+    margin-top: -20px;
+    color: darkgrey;
 }
 
 h1 {

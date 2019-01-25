@@ -1,114 +1,107 @@
 {% extends "base.html" %}
 
 {% block content %}
-<main role="main" class="container">
+	<main role="main" class="container">
 
-	<section class="row">
-		<div class="col-md-4">
-			<img src="static/img/headshot.jpg" alt="Ryder McMinn" class="headshot rounded">
-		</div>
-		<div class="col-md-8">
-			<h1>Ryder McMinn</h1>
-			<p class="lead">
-				Applied Scientist, Aspiring Adventurer, and Hopeful Space Explorer. 
-			</p>
-			<ul style="list-style-type: none;">
-				<li>
-					<i class="fa fa-envelope"></i>
-					mcminnra<span style="display:none">xzy</span>&#x0040;gmail&#x002E;com
-				</li>
-				<li>
-					<i class="fa fa-envelope"></i>
-					rmcminn<span style="display:none">xzy</span>&#x0040;iu&#x002E;edu
-				</li>
-				<li>
-					<i class="fa fa-github"></i>
-					<a href="https://github.com/mcminnra/">Github</a>
-				</li>
-				<li>
-					<i class="fa fa-linkedin"></i>
-					<a href="https://www.linkedin.com/in/rydermcminn/">LinkedIn</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<hr>
-
-	<!--
-	<ul class="nav">
-	<li class="nav-item">
-		<a class="nav-link" href="#aboutme">About Me</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#resume">Resume</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#projects">Projects</a>
-	</li>
-	</ul>
-	<hr>
-	-->
-
-
-	<section class="row" id="headline">
-		<div class="col-md-12">
-			<p>
-				<em>
+		<section class="row">
+			<div class="col-lg-4 text-center">
+				<img src="static/img/headshot.jpg" alt="Ryder McMinn" class="headshot rounded">
+			</div>
+			<div class="col-lg-8 info">
+				<h1>Ryder McMinn</h1>
+				<p class="selfdesc">
+					<em>
+						Applied Scientist, Aspiring Adventurer, and Hopeful Space Explorer. 
+					</em>
+				</p>
+				<p>
 					Graduate Research Assistant at
-					<a href="https://vision.soic.indiana.edu/">Indiana University Computer Vision Lab</a>
-					and Incoming Data Scientist at Microsoft
-				</em>
-			</p>
-		</div>
-	</section>
-	<!-- #headline -->
+					<a href="https://vision.soic.indiana.edu/">Indiana University Computer Vision Lab</a> &
+					Incoming Data Scientist at Microsoft
+				</p>
+				<ul style="list-style-type: none;">
+					<li>
+						<i class="fa fa-envelope"></i>
+						mcminnra<span style="display:none">xzy</span>&#x0040;gmail&#x002E;com
+					</li>
+					<li>
+						<i class="fa fa-envelope"></i>
+						rmcminn<span style="display:none">xzy</span>&#x0040;iu&#x002E;edu
+					</li>
+					<li>
+						<i class="fa fa-github"></i>
+						<a href="https://github.com/mcminnra/">Github</a>
+					</li>
+					<li>
+						<i class="fa fa-linkedin"></i>
+						<a href="https://www.linkedin.com/in/rydermcminn/">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-	<section class="row" id="bio">
-		<div class="col-md-12">
-			<h2>Bio</h2>
-			<p>
-				My passions are Machine Learning, Data Science, Artificial Intelligence, and Statistical Analysis, however that only scratches the surface. I consider myself an scientist because I love to create, build, and learn everything I can about technology and mathematics. Pursuing ideas and technologies where I can do just that is at the forefront of my aspirations. In addition, I love to play guitar, dive into projects, and take on adventures whenever they present themselves.
-			</p>
-		</div>
-	</section>
-	<!-- #bio -->
+		<hr>
 
-	<section class="row" id="education">
-		<div class="col-md-12">
-			<h2>Education</h2>
-			<p>
-				<b>Indiana University</b>
-				<br/>
-				<em>Masters of Science in Data Science</em>, Aug. 2017 - May 2019
-			</p>
-			<p>
-				<b>Indiana University</b>
-				<br/>
-				<em>Bachelors of Science in Computer Science</em>, Aug. 2012 - May 2017
-			</p>
-		</div>
-	</section>
-	<!-- #education -->
+		<!--
+		<ul class="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="#aboutme">About Me</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#resume">Resume</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#projects">Projects</a>
+		</li>
+		</ul>
+		<hr>
+		-->
 
-	<section class="row" id="projects">
-		<div class="col-md-12">
-			<h2>Selected Projects</h2>
-			<p>
-				<b>Data Science Notebooks</b> -
-				<a href="https://github.com/rmcminn/notebooks">github.com/rmcminn/notebooks</a>
-				<br/> Repo of various notebooks I've written for data analysis, machine learning, AI, primers, and everything in-between
-			</p>
-			<p>
-				<b>yamlfs (Yet Another Machine Learning From Scratch)</b> -
-				<a href="https://github.com/rmcminn/yamlfs">github.com/rmcminn/yamlfs</a>
-				<br/> Libraries where I re-implement AI and Machine Learning Algorithms I come across during my studies. Meant as a learning
-				tool for myself and anyone else who finds it useful.
-			</p>
-		</div>
-	</section>
-	<!-- #projects -->
+		<section class="row" id="bio">
+			<div class="col-md-12">
+				<h2>Bio</h2>
+				<p>
+					My passions are Machine Learning, Data Science, Artificial Intelligence, and Statistical Analysis, however that only scratches the surface. I consider myself an scientist because I love to create, build, and learn everything I can about technology and mathematics. Pursuing ideas and technologies where I can do just that is at the forefront of my aspirations. In addition, I love to play guitar, dive into projects, and take on adventures whenever they present themselves.
+				</p>
+			</div>
+		</section>
+		<!-- #bio -->
 
-</main>
-<!-- /.container -->
+		<section class="row" id="education">
+			<div class="col-md-12">
+				<h2>Education</h2>
+				<p>
+					<b>Indiana University</b>
+					<br/>
+					<em>Masters of Science in Data Science</em>, Aug. 2017 - May 2019
+				</p>
+				<p>
+					<b>Indiana University</b>
+					<br/>
+					<em>Bachelors of Science in Computer Science</em>, Aug. 2012 - May 2017
+				</p>
+			</div>
+		</section>
+		<!-- #education -->
+
+		<section class="row" id="projects">
+			<div class="col-md-12">
+				<h2>Selected Projects</h2>
+				<p>
+					<b>Data Science Notebooks</b> -
+					<a href="https://github.com/rmcminn/notebooks">github.com/rmcminn/notebooks</a>
+					<br/> Repo of various notebooks I've written for data analysis, machine learning, AI, primers, and everything in-between
+				</p>
+				<p>
+					<b>yamlfs (Yet Another Machine Learning From Scratch)</b> -
+					<a href="https://github.com/rmcminn/yamlfs">github.com/rmcminn/yamlfs</a>
+					<br/> Libraries where I re-implement AI and Machine Learning Algorithms I come across during my studies. Meant as a learning
+					tool for myself and anyone else who finds it useful.
+				</p>
+			</div>
+		</section>
+		<!-- #projects -->
+
+	</main>
+	<!-- /.container -->
 {% endblock %}
