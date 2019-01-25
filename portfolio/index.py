@@ -12,10 +12,6 @@ sslify = SSLify(app)
 def index():
     return render_template('index.html')
 
-@app.route('/splash')
-def splash():
-    return render_template('splash.html')
-
 # Files
 @app.route('/humans.txt')
 def humans():
