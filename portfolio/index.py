@@ -7,13 +7,6 @@ from flask_sslify import SSLify
 app = Flask(__name__)
 sslify = SSLify(app)
 
-# @app.before_request
-# def before_request():
-#     # Force https use
-#     if request.url.startswith('http://') and not app.debug:
-#         url = request.url.replace('http://', 'https://', 1)
-#         return redirect(url, code=301)
-
 @app.route('/')
 def index():
     return render_template('index.html')
