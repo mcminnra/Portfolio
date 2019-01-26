@@ -13,9 +13,9 @@ def index():
     return render_template('index.html')
 
 # Files
-@app.route('/humans.txt')
-def humans():
-    return app.send_static_file('humans.txt')
+@app.route('/sitemap.xml')
+def robots():
+    return app.send_static_file('sitemap.xml')
 
 @app.route('/robots.txt')
 def robots():
