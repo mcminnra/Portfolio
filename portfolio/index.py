@@ -30,6 +30,10 @@ def favicon():
 def page_not_found(e):
     return render_template('404.html'), 404
 
+@app.errorhandler(500)
+def server_error(e):
+    return render_template('500.html'), 500
+
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
