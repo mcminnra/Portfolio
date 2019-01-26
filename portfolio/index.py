@@ -8,13 +8,14 @@ app = Flask(__name__)
 sslify = SSLify(app, permanent=True)
 
 
+# Page Routes
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
 
-# Files
+# File Routes
 @app.route('/sitemap.xml')
 def sitemap():
     return app.send_static_file('sitemap.xml')
@@ -30,7 +31,7 @@ def favicon():
     return app.send_static_file('favicon.ico')
 
 
-# Errors
+# Error Routes
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -39,6 +40,7 @@ def page_not_found(e):
 @app.errorhandler(500)
 def server_error(e):
     return render_template('500.html'), 500
+
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
