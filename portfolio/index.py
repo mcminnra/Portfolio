@@ -14,7 +14,7 @@ def index():
 
 # Files
 @app.route('/sitemap.xml')
-def robots():
+def sitemap():
     return app.send_static_file('sitemap.xml')
 
 @app.route('/robots.txt')
