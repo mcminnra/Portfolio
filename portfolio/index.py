@@ -7,28 +7,34 @@ from flask_sslify import SSLify
 app = Flask(__name__)
 sslify = SSLify(app, permanent=True)
 
+
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
+
 
 # Files
 @app.route('/sitemap.xml')
 def sitemap():
     return app.send_static_file('sitemap.xml')
 
+
 @app.route('/robots.txt')
 def robots():
     return app.send_static_file('robots.txt')
+
 
 @app.route('/favicon.ico')
 def favicon():
     return app.send_static_file('favicon.ico')
 
+
 # Errors
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
+
 
 @app.errorhandler(500)
 def server_error(e):
