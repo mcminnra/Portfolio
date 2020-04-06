@@ -1,4 +1,4 @@
-runtime: python3
+runtime: python37
 
 instance_class: B1
 
@@ -6,3 +6,4 @@ entrypoint: gunicorn -b :$PORT --chdir portfolio index:app
 
 env_variables:
   FLASK_ENV: "production"
+  
