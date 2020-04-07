@@ -4,6 +4,9 @@ automatic_scaling:
   min_instances: 0
   max_instances: 1
 
+inbound_services:
+- warmup
+
 entrypoint: gunicorn -b :$PORT --chdir portfolio index:app
 
 env_variables:
