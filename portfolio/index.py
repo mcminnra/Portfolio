@@ -15,6 +15,12 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/_ah/warmup')
+def warmup():
+    # Handle your warmup logic here, e.g. set up a database connection pool
+    return '', 200, {}
+
+
 # File Routes
 @app.route('/sitemap.xml')
 def sitemap():
